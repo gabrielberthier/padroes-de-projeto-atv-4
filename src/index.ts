@@ -1,22 +1,19 @@
-'use strict';
+"use strict";
 
-import { Logger } from 'sitka';
+import { Emitters } from "./services/message-emitters";
 
-export class Example {
-	/* Private Instance Fields */
+(() => {
+  const message = "Some weird nonsense text";
+  const cryptoEmitter = new Emitters.CryptoEmitter(new Emitters.BasicEmitter());
+  cryptoEmitter.send(message);
 
-	private _logger: Logger;
+  const compressEmitter = new Emitters.CompressEmitter(
+    new Emitters.BasicEmitter()
+  );
+  compressEmitter.send(message);
 
-	/* Constructor */
-
-	constructor() {
-		this._logger = Logger.getLogger({ name: this.constructor.name });
-	}
-
-	/* Public Instance Methods */
-
-	public exampleMethod(param: string): string {
-		this._logger.debug('Received: ' + param);
-		return param;
-	}
-}
+  const mixedEmitter = new Emitters.CryptoEmitter(
+    new Emitters.CompressEmitter(new Emitters.BasicEmitter())
+  );
+  mixedEmitter.send(message);
+})();
