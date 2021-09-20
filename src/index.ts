@@ -1,19 +1,20 @@
 "use strict";
 
-import { Emitters } from "./services/message-emitters";
+import { BasicEmitter } from "./services/emitters/basic-emitter";
+import { CompressEmitter } from "./services/emitters/compress-emitter";
+import { CryptoEmitter } from "./services/emitters/crypto-emitter";
 
 (() => {
   const message = "Some weird nonsense text";
-  const cryptoEmitter = new Emitters.CryptoEmitter(new Emitters.BasicEmitter());
+  const cryptoEmitter = new CryptoEmitter(new BasicEmitter());
   cryptoEmitter.send(message);
 
-  const compressEmitter = new Emitters.CompressEmitter(
-    new Emitters.BasicEmitter()
-  );
+  const compressEmitter = new CompressEmitter(new BasicEmitter());
   compressEmitter.send(message);
 
-  const mixedEmitter = new Emitters.CryptoEmitter(
-    new Emitters.CompressEmitter(new Emitters.BasicEmitter())
+  const mixedEmitter = new CryptoEmitter(
+    new CompressEmitter(new BasicEmitter())
   );
+
   mixedEmitter.send(message);
 })();
