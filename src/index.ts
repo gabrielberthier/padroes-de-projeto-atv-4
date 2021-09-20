@@ -8,6 +8,7 @@ import { BracesDecorator } from "./services/number-one-decorators/braces-decorat
 import { BracketsDecorator } from "./services/number-one-decorators/brackets-decorator";
 import { NumberOne } from "./services/number-one-decorators/number-one";
 import { ParenthesesDecorator } from "./services/number-one-decorators/parentheses-decorator";
+import { PizzaPeppe } from "./services/pizza/pizzaiolo-peppe";
 
 (() => {
   // Questão 1
@@ -35,4 +36,7 @@ import { ParenthesesDecorator } from "./services/number-one-decorators/parenthes
   console.log("Imprimindo número um formatado");
 
   new NumberOne(showOne).imprimir();
+
+  // Questão 3
+  new PizzaPeppe().main();
 })();
