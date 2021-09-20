@@ -8,7 +8,7 @@ export class CompressEmitter extends AbstractEmitterDecorator {
   }
   send(subject: string): void {
     console.log("Compressing message");
-    console.log(this.getEmissor().send(this.compress(subject)));
+    this.getEmissor().send(this.compress(subject));
   }
   compress(subject: string): string {
     const encoder = new TextEncoder();

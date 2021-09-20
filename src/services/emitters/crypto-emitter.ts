@@ -7,7 +7,7 @@ export class CryptoEmitter extends AbstractEmitterDecorator {
   }
   send(subject: string): void {
     console.log("Cryptographying message");
-    console.log(this.getEmissor().send(this.encrypt(subject)));
+    this.getEmissor().send(this.encrypt(subject));
   }
   encrypt(subject: string): string {
     return subject.split("").reverse().join("");
