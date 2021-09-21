@@ -8,6 +8,8 @@ import { BracesDecorator } from "./services/number-one-decorators/braces-decorat
 import { BracketsDecorator } from "./services/number-one-decorators/brackets-decorator";
 import { NumberOne } from "./services/number-one-decorators/number-one";
 import { ParenthesesDecorator } from "./services/number-one-decorators/parentheses-decorator";
+import { Broker } from "./services/observer-package/broker";
+import { Stock } from "./services/observer-package/Stock";
 import { PizzaPeppe } from "./services/pizza/pizzaiolo-peppe";
 
 (() => {
@@ -39,4 +41,16 @@ import { PizzaPeppe } from "./services/pizza/pizzaiolo-peppe";
 
   // Questão 3
   new PizzaPeppe().main();
+
+  // Questão 4
+  const broker = new Broker("Nu Invest");
+  const broker2 = new Broker("Easynvestments");
+  const broker3 = new Broker("Serase");
+
+  const stock = new Stock("VALE3", 15);
+  stock.addSubscriber(broker);
+  stock.addSubscriber(broker2);
+  stock.addSubscriber(broker3);
+
+  stock.value = 16;
 })();
