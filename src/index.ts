@@ -9,7 +9,7 @@ import { BracketsDecorator } from "./services/number-one-decorators/brackets-dec
 import { NumberOne } from "./services/number-one-decorators/number-one";
 import { ParenthesesDecorator } from "./services/number-one-decorators/parentheses-decorator";
 import { Broker } from "./services/observer-package/broker";
-import { Stock } from "./services/observer-package/Stock";
+import { Stock } from "./services/observer-package/stock";
 import { PizzaPeppe } from "./services/pizza/pizzaiolo-peppe";
 
 (() => {

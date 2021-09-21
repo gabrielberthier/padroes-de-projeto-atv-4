@@ -1,4 +1,4 @@
-import { Stock } from "./Stock";
+import { Stock } from "./stock";
 import { StockObserver } from "./stock-observer";
 
 export class Broker implements StockObserver {

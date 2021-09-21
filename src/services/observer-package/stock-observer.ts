@@ -1,4 +1,4 @@
-import { Stock } from "./Stock";
+import { Stock } from "./stock";
 
 export interface StockObserver {
   notifyAction(stock: Stock): void;
