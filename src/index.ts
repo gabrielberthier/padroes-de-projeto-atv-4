@@ -13,6 +13,8 @@ import { NumberOne } from "./domain/number-one";
 import { PizzaPeppe } from "./domain/pizza-party/pizzaiolo-peppe";
 import { Stock } from "./domain/broker-shares/stock";
 
+import { BingoSystem } from "./domain/bingo/bingo-system";
+
 (() => {
   // Questão 1
   const message = "Some weird nonsense text";
@@ -54,4 +56,8 @@ import { Stock } from "./domain/broker-shares/stock";
   stock.addSubscriber(broker3);
 
   stock.value = 16;
+
+  // Questão 5
+  const bingoSystem = BingoSystem.getInstance();
+  bingoSystem.start(6).play();
 })();
