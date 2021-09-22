@@ -17,7 +17,10 @@ export class BingoCard implements BingoObserver {
   warn(num: number): boolean {
     if (this.numbers.includes(num)) {
       this.matches.forEach(async (element, index, array) => {
-        if (element === num) array[index] = -1;
+        if (element === num) {
+          array[index] = -1;
+          console.log(`HEY ${this.id}'S GOT NUMBER ${num}`);
+        }
       });
     }
 

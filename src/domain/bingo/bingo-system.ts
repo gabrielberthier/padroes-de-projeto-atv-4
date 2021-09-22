@@ -6,9 +6,7 @@ export class BingoSystem {
   private static instance: BingoSystem | null = null;
   private drawnNums: number[] = [];
 
-  private constructor(
-    private observers: Array<BingoObserver> = new Array<BingoObserver>()
-  ) {}
+  private constructor(private observers: BingoObserver[] = []) {}
 
   static getInstance(): BingoSystem {
     if (!BingoSystem.instance) {
