@@ -1,4 +1,4 @@
-import { Pizza } from "../pizza";
+import { Pizza } from "../../../domain/pizza-party/pizza";
 
 export abstract class CondimentoDecorator extends Pizza {
   constructor(private pizza: Pizza, description: string, cost: number) {

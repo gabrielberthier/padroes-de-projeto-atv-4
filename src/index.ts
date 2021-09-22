@@ -6,11 +6,12 @@ import { CryptoEmitter } from "./services/emitters/crypto-emitter";
 import { BaseOne } from "./services/number-one-decorators/base-one-decoractor";
 import { BracesDecorator } from "./services/number-one-decorators/braces-decorator";
 import { BracketsDecorator } from "./services/number-one-decorators/brackets-decorator";
-import { NumberOne } from "./services/number-one-decorators/number-one";
 import { ParenthesesDecorator } from "./services/number-one-decorators/parentheses-decorator";
-import { Broker } from "./services/observer-package/broker";
-import { Stock } from "./services/observer-package/stock";
-import { PizzaPeppe } from "./services/pizza/pizzaiolo-peppe";
+import { Broker } from "./domain/broker-shares/broker";
+
+import { NumberOne } from "./domain/number-one";
+import { PizzaPeppe } from "./domain/pizza-party/pizzaiolo-peppe";
+import { Stock } from "./domain/broker-shares/stock";
 
 (() => {
   // Questão 1

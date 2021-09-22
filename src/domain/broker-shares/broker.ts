@@ -1,5 +1,5 @@
 import { Stock } from "./stock";
-import { StockObserver } from "./stock-observer";
+import { StockObserver } from "../../services/observer-package/stock-observer";
 
 export class Broker implements StockObserver {
   constructor(private nome: string) {}

@@ -1,4 +1,4 @@
-import { StockObserver } from "./stock-observer";
+import { StockObserver } from "../../services/observer-package/stock-observer";
 
 export class Stock {
   constructor(

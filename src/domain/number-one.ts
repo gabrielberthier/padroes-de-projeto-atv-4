@@ -1,4 +1,4 @@
-import { NumDecorator } from "./num-decorator";
+import { NumDecorator } from "../services/number-one-decorators/num-decorator";
 
 export class NumberOne {
   private value = 1;
