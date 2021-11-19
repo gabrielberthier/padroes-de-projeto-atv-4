@@ -3063,10 +3063,10 @@ sitka@^1.0.5:
   resolved "https://registry.yarnpkg.com/sitka/-/sitka-1.0.5.tgz#f999e21cda1e6d61d45b11482f2699373339a32b"
   integrity sha512-QECAFOfpx3wP2aoDcH0upa96erXFDl1meiwb4heo8pgeJBMHdem9mdbI4LXg0pXf//Iy+ZoPwlFufeBqrgc5sQ==
 
-source-map-support@^0.5.12:
-  version "0.5.20"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.20.tgz#12166089f8f5e5e8c56926b377633392dd2cb6c9"
-  integrity sha512-n1lZZ8Ve4ksRqizaBQgxXDgKwttHDhyfQjA6YZZn8+AroHbsIz+JjwxQDxbp+7y5OYCI8t1Yk7etjD9CRd2hIw==
+source-map-support@^0.5.21:
+  version "0.5.21"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
+  integrity sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
