@@ -3058,10 +3058,10 @@ signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.4.tgz#366a4684d175b9cab2081e3681fda3747b6c51d7"
   integrity sha512-rqYhcAnZ6d/vTPGghdrw7iumdcbXpsk1b8IG/rz+VWV51DM0p7XCtMoJ3qhPLIbp3tvyt3pKRbaaEMZYpHto8Q==
 
-sitka@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/sitka/-/sitka-1.0.5.tgz#f999e21cda1e6d61d45b11482f2699373339a32b"
-  integrity sha512-QECAFOfpx3wP2aoDcH0upa96erXFDl1meiwb4heo8pgeJBMHdem9mdbI4LXg0pXf//Iy+ZoPwlFufeBqrgc5sQ==
+sitka@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/sitka/-/sitka-1.0.6.tgz#ef931be007cf81f218b61035a5a2cf24b264c746"
+  integrity sha512-cSupkcoDdC3CrdmDK3EFf2GwcKV5DD9Ig41Wu2U0CDudUpQbcUpppAR65B2GG3arjqEgzi9foyyL4C54Zx7m2w==
 
 source-map-support@^0.5.12:
   version "0.5.20"
